@@ -81,7 +81,7 @@ def get_all_products(
         product_list = [
             product
             for product in product_list
-            if product.category.casefold() == category.strip().casefold()
+            if product.category.casefold() == category.strip().casefold() #Converts text into a case-insensitive comparison format.
         ]
 
     # Apply pagination.

@@ -14,7 +14,8 @@ from app.routers.product_routes import router as product_router
 logging.basicConfig(level=logging.INFO)
 
 logger = logging.getLogger(__name__)
-
+#Logging – recording application activities and errors.
+#Exception handling – controlling what response the API sends when an error occurs.
 
 # Create FastAPI application.
 app = FastAPI(

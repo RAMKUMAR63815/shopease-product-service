@@ -64,7 +64,7 @@ class ProductCreate(BaseModel):
     @field_validator("category", mode="before")
     @classmethod
     def validate_category(cls, value):
-        if isinstance(value, str):
+        if isinstance(value, str):#Given value particular data type-ah irukka-nu check pannum.
             value = value.strip()
 
         return value
